@@ -1,0 +1,15 @@
+
+
+<body class="bg-light">
+
+  <div>
+    <app-sidebar></app-sidebar>
+
+    <router-outlet></router-outlet>
+
+  </div>
+  <button (click)="toggleTheme()" class="btn btn-danger rounded-end-0 position-fixed custom-dark-button">
+    <i class="bi bi-brightness-high" [class.d-block]="darkTheme" [class.d-none]="!darkTheme"></i>
+    <i class="bi bi-moon-stars" [class.d-none]="darkTheme" [class.d-block]="!darkTheme"></i>
+  </button>
+</body>

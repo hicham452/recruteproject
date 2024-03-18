@@ -1,0 +1,281 @@
+<app-navbar></app-navbar>
+
+<div class="position-relative">
+  <div class="admin-page-wrapper">
+    <h5 class="mb-4">Manage Candidates!</h5>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card" [ngClass]="{ 'border': darkTheme, 'border-0 shadow-md': !darkTheme }">
+          <div class="card-header border-0 pb-2 d-flex align-items-center">
+            <h6 class="font-16 mb-0 flex-grow-1">Candidates Listings</h6>
+            <div class="flex-shrink-0">
+              <button class="btn btn-sm btn-secondary" type="button" (click)="openCreateModal()">
+                <i class="bi bi-plus-circle me-1"></i> Add Candidate
+              </button>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table align-middle font-15">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Email</th>
+                    <th>Contact Number</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <img src="assets/images/feedback_client/client-01.jpg" alt="" class="square-xxs rounded">
+                        <h6 class="mb-0 font-15">Laura Cussen</h6>
+                      </div>
+                    </td>
+                    <td>React Developer</td>
+                    <td>laura&#64;objectthemes.com</td>
+                    <td>09192 98 53 57</td>
+                    <td>
+                      <div class="d-flex gap-3 flex-wrap">
+                        <a href="#!" class="link-primary"><i class="bi bi-eye"></i></a>
+                        <a href="#!" class="link-secondary" data-bs-toggle="modal" (click)="openCreateModal()"><i
+                            class="bi bi-pencil-square"></i></a>
+                        <a href="#!" class="link-danger"><i class="bi bi-trash3"></i></a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <img src="assets/images/feedback_client/client-02.jpg" alt="" class="square-xxs rounded">
+                        <h6 class="mb-0 font-15">Gabriel Reinhold</h6>
+                      </div>
+                    </td>
+                    <td>UI / UX Designer</td>
+                    <td>gabriel&#64;objectthemes.com</td>
+                    <td>02421 86 81 07</td>
+                    <td>
+                      <div class="d-flex gap-3 flex-wrap">
+                        <a href="#!" class="link-primary"><i class="bi bi-eye"></i></a>
+                        <a href="#!" class="link-secondary" data-bs-toggle="modal" (click)="openCreateModal()"><i
+                            class="bi bi-pencil-square"></i></a>
+                        <a href="#!" class="link-danger"><i class="bi bi-trash3"></i></a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <img src="assets/images/feedback_client/client-03.jpg" alt="" class="square-xxs rounded">
+                        <h6 class="mb-0 font-15">Eliza Malley</h6>
+                      </div>
+                    </td>
+                    <td>ASP.Net Developer</td>
+                    <td>eliza&#64;objectthemes.com</td>
+                    <td>09856 99 61 97</td>
+                    <td>
+                      <div class="d-flex gap-3 flex-wrap">
+                        <a href="#!" class="link-primary"><i class="bi bi-eye"></i></a>
+                        <a href="#!" class="link-secondary" data-bs-toggle="modal" (click)="openCreateModal()"><i
+                            class="bi bi-pencil-square"></i></a>
+                        <a href="#!" class="link-danger"><i class="bi bi-trash3"></i></a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <img src="assets/images/feedback_client/client-04.jpg" alt="" class="square-xxs rounded">
+                        <h6 class="mb-0 font-15">Summer Mouton</h6>
+                      </div>
+                    </td>
+                    <td>Team Leader</td>
+                    <td>mouton&#64;objectthemes.com</td>
+                    <td>036701 71 29</td>
+                    <td>
+                      <div class="d-flex gap-3 flex-wrap">
+                        <a href="#!" class="link-primary"><i class="bi bi-eye"></i></a>
+                        <a href="#!" class="link-secondary" data-bs-toggle="modal" (click)="openCreateModal()"><i
+                            class="bi bi-pencil-square"></i></a>
+                        <a href="#!" class="link-danger"><i class="bi bi-trash3"></i></a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <img src="assets/images/feedback_client/client-05.jpg" alt="" class="square-xxs rounded">
+                        <h6 class="mb-0 font-15">Natalie Westall</h6>
+                      </div>
+                    </td>
+                    <td>Angular Developer</td>
+                    <td>natalie&#64;objectthemes.com</td>
+                    <td>07275 15 17 27</td>
+                    <td>
+                      <div class="d-flex gap-3 flex-wrap">
+                        <a href="#!" class="link-primary"><i class="bi bi-eye"></i></a>
+                        <a href="#!" class="link-secondary" data-bs-toggle="modal" (click)="openCreateModal()"><i
+                            class="bi bi-pencil-square"></i></a>
+                        <a href="#!" class="link-danger"><i class="bi bi-trash3"></i></a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <img src="assets/images/feedback_client/client-06.jpg" alt="" class="square-xxs rounded">
+                        <h6 class="mb-0 font-15">Alexandra Goodwin</h6>
+                      </div>
+                    </td>
+                    <td>Backend Developer</td>
+                    <td>alexandra&#64;objectthemes.com</td>
+                    <td>03991 64 64 97</td>
+                    <td>
+                      <div class="d-flex gap-3 flex-wrap">
+                        <a href="#!" class="link-primary"><i class="bi bi-eye"></i></a>
+                        <a href="#!" class="link-secondary" data-bs-toggle="modal" (click)="openCreateModal()"><i
+                            class="bi bi-pencil-square"></i></a>
+                        <a href="#!" class="link-danger"><i class="bi bi-trash3"></i></a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <img src="assets/images/feedback_client/client-07.jpg" alt="" class="square-xxs rounded">
+                        <h6 class="mb-0 font-15">Rachel Anderson</h6>
+                      </div>
+                    </td>
+                    <td>Frontend Developer</td>
+                    <td>anderson&#64;objectthemes.com</td>
+                    <td>089 15 91 80</td>
+                    <td>
+                      <div class="d-flex gap-3 flex-wrap">
+                        <a href="#!" class="link-primary"><i class="bi bi-eye"></i></a>
+                        <a href="#!" class="link-secondary" data-bs-toggle="modal" (click)="openCreateModal()"><i
+                            class="bi bi-pencil-square"></i></a>
+                        <a href="#!" class="link-danger"><i class="bi bi-trash3"></i></a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <img src="assets/images/feedback_client/client-08.jpg" alt="" class="square-xxs rounded">
+                        <h6 class="mb-0 font-15">Tegan Hancock</h6>
+                      </div>
+                    </td>
+                    <td>Full Stack Developer</td>
+                    <td>hancock&#64;objectthemes.com</td>
+                    <td>09123 97 14 47</td>
+                    <td>
+                      <div class="d-flex gap-3 flex-wrap">
+                        <a href="#!" class="link-primary"><i class="bi bi-eye"></i></a>
+                        <a href="#!" class="link-secondary" data-bs-toggle="modal" (click)="openCreateModal()"><i
+                            class="bi bi-pencil-square"></i></a>
+                        <a href="#!" class="link-danger"><i class="bi bi-trash3"></i></a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <p class="mb-0 text-muted text-center text-lg-start font-14 mb-3 mb-lg-0">Showing <b>32</b> of
+                  <b>149</b> Jobs</p>
+              </div>
+              <div class="col-lg-6">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-center justify-content-lg-end mb-0 pagination-sm">
+                    <li class="page-item">
+                      <a class="page-link square-xs" href="#" aria-label="Previous">
+                        <i class="bi bi-chevron-left"></i>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link square-xs" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link square-xs" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link square-xs" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link square-xs" href="#">4</a></li>
+                    <li class="page-item">
+                      <a class="page-link square-xs" href="#" aria-label="Next">
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <ng-template #content let-modal>
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="createModalLabel">Create Candidate</h1>
+          <button type="button" class="btn-close" (click)="modal.dismiss()" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#!">
+            <div class="row g-3">
+              <div class="col-lg-12">
+                <div>
+                  <label for="formFile" class="form-label font-15 fw-medium">Upload Profile Image</label>
+                  <input class="form-control" type="file" id="formFile">
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div>
+                  <label for="fullName" class="form-label font-15 fw-medium">Full Name</label>
+                  <input type="text" class="form-control" id="fullName" placeholder="Enter name">
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div>
+                  <label for="roleInput" class="form-label font-15 fw-medium">Role</label>
+                  <input type="text" class="form-control" id="roleInput" placeholder="Role">
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div>
+                  <label for="roleInput" class="form-label font-15 fw-medium">Email Address</label>
+                  <input type="email" class="form-control" id="roleInput" placeholder="Email address">
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div>
+                  <label for="contactNumberInput" class="form-label font-15 fw-medium">Contact Number</label>
+                  <input type="number" class="form-control" id="contactNumberInput" placeholder="Contact number">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" (click)="modal.dismiss()">Close</button>
+          <button type="button" class="btn btn-primary">Add Candidate</button>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>

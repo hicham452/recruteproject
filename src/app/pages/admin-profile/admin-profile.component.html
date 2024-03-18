@@ -1,0 +1,452 @@
+<app-navbar></app-navbar>
+<div class="position-relative">
+  <div class="admin-page-wrapper">
+      <h5 class="mb-4">Welcome to Michelle Yoder 👋</h5>
+
+      <div class="row">
+          <div class="col-xl-9">
+              <div class="card" [ngClass]="{ 'border': darkTheme, 'border-0 shadow-md': !darkTheme }">
+                  <div class="py-5 bg-secondary bg-secondary-subtle rounded-top-2">
+                      <div class="py-5">
+                      </div>
+                  </div>
+                  <img src="assets/images/feedback_client/client-02.jpg" alt="" class="square-xxl bg-secondary-subtle rounded-circle img-thumbnail mt-n5 ms-3">
+                  <div class="card-body">
+                      <div class="d-flex align-items-center justify-content-between mb-3">
+                          <h6 class="mb-0">Michelle Yoder</h6>
+                          <button class="btn btn-sm btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#createModal"><i class="bi bi-pen"></i> Edit Profile</button>
+                      </div>
+                      <ul class="d-flex list-unstyled gap-3 mb-3">
+                          <li class="d-flex align-items-center gap-3">
+                              <img src="/assets/images/country/Germany.svg.webp" alt="Germany country flag" class="" width="30" />
+                              <div class="vr"></div>
+                          </li>
+                          <li>
+                              <p class="text-muted font-14 mb-0"><i class="bi bi-person me-1 align-baseline"></i> Admin & Founder</p>
+                          </li>
+                          <li>
+                              <p class="text-muted font-14 mb-0"><i class="bi bi-geo-alt align-baseline me-1"></i> Germany</p>
+                          </li>
+                      </ul>
+                      <div class="mb-3">
+                          <span class="badge bg-dark-subtle text-body">HTML</span>
+                          <span class="badge bg-dark-subtle text-body">CSS</span>
+                          <span class="badge bg-dark-subtle text-body">Bootstrap</span>
+                          <span class="badge bg-dark-subtle text-body">React</span>
+                      </div>
+                      <ul class="d-flex list-unstyled gap-3 mb-3">
+                          <li class="d-flex align-items-center gap-3">
+                              <p class="font-14 mb-0">Age : <span class="text-muted">24</span></p>
+                              <div class="vr"></div>
+                          </li>
+                          <li class="d-flex align-items-center gap-3">
+                              <p class="font-14 mb-0">Gender : <span class="text-muted">Male</span></p>
+                              <div class="vr"></div>
+                          </li>
+                          <li class="d-flex align-items-center gap-3">
+                              <p class="font-14 mb-0">Status : <span class="text-success">Active*</span></p>
+                          </li>
+                      </ul>
+                      <div class="table-responsive">
+                          <table class="table table-borderless border-top">
+                              <tr class="" height="40">
+                                  <th scope="row" class="text-muted text-nowrap"><i class="bi bi-person me-1"></i> Role : </th>
+                                  <td></td>
+                                  <td class="font-15">Administrator</td>
+                              </tr>
+                              <tr height="40">
+                                  <th scope="row" class="text-muted text-nowrap"><i class="bi bi-envelope me-1"></i> Email : </th>
+                                  <td></td>
+                                  <td class="font-15">michelle.yodr&#64;email.com</td>
+                              </tr>
+                              <tr height="40">
+                                  <th scope="row" class="text-muted text-nowrap"><i class="bi bi-telephone me-1"></i> Contact : </th>
+                                  <td></td>
+                                  <td class="font-15">+61 (4567) (8543)</td>
+                              </tr>
+                              <tr height="40">
+                                  <th scope="row" class="text-muted text-nowrap"><i class="bi bi-geo-alt me-1"></i> Region : </th>
+                                  <td></td>
+                                  <td class="font-15">Central Germany</td>
+                              </tr>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="card" [ngClass]="{ 'border': darkTheme, 'border-0 shadow-md': !darkTheme }">
+                  <div class="card-header border-0 pb-2 d-flex align-items-center">
+                      <h6 class="font-16 mb-0 flex-grow-1">Recent Activies</h6>
+                      <div class="flex-shrink-0">
+                          <button class="btn btn-sm btn-primary" type="button">
+                              Add Projects <i class="bi bi-plus"></i>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="table font-14 align-middle" x-data="data()">
+                              <thead>
+                                  <tr>
+                                      <th (click)="sortByColumn">#</th>
+                                      <th (click)="sortByColumn">Project</th>
+                                      <th (click)="sortByColumn">Applied Date</th>
+                                      <th (click)="sortByColumn">Budget</th>
+                                      <th (click)="sortByColumn">Status</th>
+                                      <th (click)="sortByColumn"></th>
+                                  </tr>
+                              </thead>
+                              <tbody x-ref="tbody">
+                                  <tr>
+                                      <td>1</td>
+                                      <td>
+                                          <a href="#!" class="d-inline-flex align-items-center gap-2">
+                                              <img src="assets/images/company_logo/linkedin.png" alt="" height="30" class="rounded">
+                                              <h6 class="mb-0 font-15">Google</h6>
+                                          </a>
+                                      </td>
+                                      <td>24 Feb, 2024</td>
+                                      <td>$4,700</td>
+                                      <td>
+                                          <div class="d-flex align-items-center">
+                                              <span class="flex-shrink-0 font-12 me-2">25%</span>
+                                              <div class="flex-grow-1 progress bg-danger-subtle" role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px">
+                                                  <div class="progress-bar bg-danger" style="width: 25%"></div>
+                                              </div>
+                                          </div>
+                                      </td>
+                                      <td class="text-center">
+                                          <a href="#" class="text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots"></i></a>
+                                          <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item font-12" href="#">Edit</a></li>
+                                              <li><a class="dropdown-item font-12" href="#">Delete</a></li>
+                                              <li><a class="dropdown-item font-12" href="#">New Add</a></li>
+                                          </ul>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>2</td>
+                                      <td>
+                                          <a href="#!" class="d-inline-flex align-items-center gap-2">
+                                              <img src="assets/images/company_logo/flutter.jpg" alt="" height="30" class="rounded">
+                                              <h6 class="mb-0 font-15">ObjectThemes</h6>
+                                          </a>
+                                      </td>
+                                      <td>17 Feb, 2024</td>
+                                      <td>$4,090</td>
+                                      <td>
+                                          <div class="d-flex align-items-center">
+                                              <span class="flex-shrink-0 font-12 me-2">54%</span>
+                                              <div class="flex-grow-1 progress bg-warning-subtle" role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px">
+                                                  <div class="progress-bar bg-warning" style="width: 54%"></div>
+                                              </div>
+                                          </div>
+                                      </td>
+                                      <td class="text-center">
+                                          <a href="#" class="text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots"></i></a>
+                                          <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item font-12" href="#">Edit</a></li>
+                                              <li><a class="dropdown-item font-12" href="#">Delete</a></li>
+                                              <li><a class="dropdown-item font-12" href="#">New Add</a></li>
+                                          </ul>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>3</td>
+                                      <td>
+                                          <a href="#!" class="d-inline-flex align-items-center gap-2">
+                                              <img src="assets/images/company_logo/flask.jpg" alt="" height="30" class="rounded">
+                                              <h6 class="mb-0 font-15">Ctrl Solution</h6>
+                                          </a>
+                                      </td>
+                                      <td>15 Feb, 2024</td>
+                                      <td>$10,000</td>
+                                      <td>
+                                          <div class="d-flex align-items-center">
+                                              <span class="flex-shrink-0 font-12 me-2">78%</span>
+                                              <div class="flex-grow-1 progress bg-success-subtle" role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px">
+                                                  <div class="progress-bar bg-success" style="width: 78%"></div>
+                                              </div>
+                                          </div>
+                                      </td>
+                                      <td class="text-center">
+                                          <a href="#" class="text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots"></i></a>
+                                          <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item font-12" href="#">Edit</a></li>
+                                              <li><a class="dropdown-item font-12" href="#">Delete</a></li>
+                                              <li><a class="dropdown-item font-12" href="#">New Add</a></li>
+                                          </ul>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>4</td>
+                                      <td>
+                                          <a href="#!" class="d-inline-flex align-items-center gap-2">
+                                              <img src="assets/images/company_logo/vue.jpg" alt="" height="30" class="rounded">
+                                              <h6 class="mb-0 font-15">Pixel Soft</h6>
+                                          </a>
+                                      </td>
+                                      <td>09 Feb, 2024</td>
+                                      <td>$2,100</td>
+                                      <td>
+                                          <div class="d-flex align-items-center">
+                                              <span class="flex-shrink-0 font-12 me-2">12%</span>
+                                              <div class="flex-grow-1 progress bg-light" role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px">
+                                                  <div class="progress-bar bg-dark-subtle" style="width: 12%"></div>
+                                              </div>
+                                          </div>
+                                      </td>
+                                      <td class="text-center">
+                                          <a href="#" class="text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots"></i></a>
+                                          <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item font-12" href="#">Edit</a></li>
+                                              <li><a class="dropdown-item font-12" href="#">Delete</a></li>
+                                              <li><a class="dropdown-item font-12" href="#">New Add</a></li>
+                                          </ul>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>5</td>
+                                      <td>
+                                          <a href="#!" class="d-inline-flex align-items-center gap-2">
+                                              <img src="assets/images/company_logo/shopify.jpg" alt="" height="30" class="rounded">
+                                              <h6 class="mb-0 font-15">Shopify</h6>
+                                          </a>
+                                      </td>
+                                      <td>28 Jan, 2024</td>
+                                      <td>$9,100</td>
+                                      <td>
+                                          <div class="d-flex align-items-center">
+                                              <span class="flex-shrink-0 font-12 me-2">32%</span>
+                                              <div class="flex-grow-1 progress bg-danger-subtle" role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px">
+                                                  <div class="progress-bar bg-danger" style="width: 32%"></div>
+                                              </div>
+                                          </div>
+                                      </td>
+                                      <td class="text-center">
+                                          <a href="#" class="text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots"></i></a>
+                                          <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item font-12" href="#">Edit</a></li>
+                                              <li><a class="dropdown-item font-12" href="#">Delete</a></li>
+                                              <li><a class="dropdown-item font-12" href="#">New Add</a></li>
+                                          </ul>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>6</td>
+                                      <td>
+                                          <a href="#!" class="d-inline-flex align-items-center gap-2">
+                                              <img src="assets/images/company_logo/telegram.png" alt="" height="30" class="rounded">
+                                              <h6 class="mb-0 font-15">Telegram</h6>
+                                          </a>
+                                      </td>
+                                      <td>23 Jan, 2024</td>
+                                      <td>$3,500</td>
+                                      <td>
+                                          <div class="d-flex align-items-center">
+                                              <span class="flex-shrink-0 font-12 me-2">63%</span>
+                                              <div class="flex-grow-1 progress bg-warning-subtle" role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px">
+                                                  <div class="progress-bar bg-warning" style="width: 63%"></div>
+                                              </div>
+                                          </div>
+                                      </td>
+                                      <td class="text-center">
+                                          <a href="#" class="text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots"></i></a>
+                                          <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item font-12" href="#">Edit</a></li>
+                                              <li><a class="dropdown-item font-12" href="#">Delete</a></li>
+                                              <li><a class="dropdown-item font-12" href="#">New Add</a></li>
+                                          </ul>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                      <div class="row align-items-center">
+                          <div class="col-lg-6">
+                              <p class="mb-0 text-muted text-center text-lg-start font-14 mb-3 mb-lg-0">Showing <b>1</b> of <b>20</b> Jobs</p>
+                          </div>
+                          <div class="col-lg-6">
+                              <nav aria-label="Page navigation example">
+                                  <ul class="pagination justify-content-center justify-content-lg-end mb-0 pagination-sm">
+                                      <li class="page-item">
+                                          <a class="page-link square-xs" href="#" aria-label="Previous">
+                                              <i class="bi bi-chevron-left"></i>
+                                          </a>
+                                      </li>
+                                      <li class="page-item"><a class="page-link square-xs" href="#">1</a></li>
+                                      <li class="page-item active"><a class="page-link square-xs" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link square-xs" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link square-xs" href="#">4</a></li>
+                                      <li class="page-item"><a class="page-link square-xs" href="#">5</a></li>
+                                      <li class="page-item">
+                                          <a class="page-link square-xs" href="#" aria-label="Next">
+                                              <i class="bi bi-chevron-right"></i>
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </nav>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-3">
+              <div class="">
+                  <h6 class="font-16 mb-3 flex-grow-1"> Activies</h6>
+                  <div class="row">
+                      <div class="col-md-6 col-xl-12">
+                          <div class="card border-0" [ngClass]="{ 'border': darkTheme, 'border-0 shadow-md': !darkTheme }">
+                              <div class="card-body d-flex align-items-center justify-content-between">
+                                  <div>
+                                      <p>Active Goals</p>
+                                      <h5 class="fs-5">3</h5>
+                                  </div>
+                                  <div class="text-info fs-1 border-start ps-3">
+                                      <i class="bi bi-graph-down"></i>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col-md-6 col-xl-12">
+                          <div class="card border-0" [ngClass]="{ 'border': darkTheme, 'border-0 shadow-md': !darkTheme }">
+                              <div class="card-body d-flex align-items-center justify-content-between">
+                                  <div>
+                                      <p>Progress</p>
+                                      <h5 class="fs-5">40%</h5>
+                                  </div>
+                                  <div class="text-warning fs-1 border-start ps-3">
+                                      <i class="bi bi-graph-up-arrow"></i>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col-md-6 col-xl-12">
+                          <div class="card border-0" [ngClass]="{ 'border': darkTheme, 'border-0 shadow-md': !darkTheme }">
+                              <div class="card-body d-flex align-items-center justify-content-between">
+                                  <div>
+                                      <p>Completed Task</p>
+                                      <h5 class="fs-5">6</h5>
+                                  </div>
+                                  <div class="text-success fs-1 border-start ps-3">
+                                      <i class="bi bi-graph-up"></i>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6 col-xl-12">
+                          <div class="card border-0" [ngClass]="{ 'border': darkTheme, 'border-0 shadow-md': !darkTheme }">
+                              <div class="card-body d-flex align-items-center justify-content-between">
+                                  <div>
+                                      <p>Due Tasks</p>
+                                      <h5 class="fs-5">2</h5>
+                                  </div>
+                                  <div class="text-danger fs-1 border-start ps-3">
+                                      <i class="bi bi-graph-down-arrow"></i>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div>
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                      <h6 class="font-16 mb-0 flex-grow-1">Connection</h6>
+                      <button class="btn btn-dark btn-sm">All <i class="bi bi-chevron-down"></i></button>
+                  </div>
+                  <div class="card" [ngClass]="{ 'border': darkTheme, 'border-0 shadow-md': !darkTheme }">
+                      <div class="card-body">
+                          <div class="mb-3">
+                              <input type="search" class="form-control" id="" name="" placeholder="Search..">
+                          </div>
+                          <div class="table-responsive">
+                              <table class="table table-borderless">
+                                  <tbody>
+                                      <tr>
+                                          <td>
+                                              <img src="assets/images/feedback_client/client-01.jpg" alt="" class="square-sm rounded">
+                                          </td>
+                                          <td class="align-middle">
+                                              <h6 class="font-15 mb-1">Alex Jordan</h6>
+                                              <p class="font-12 text-capitalize mb-0">Sr.Developer</p>
+                                          </td>
+                                          <td class="align-middle">
+                                              <button class="btn btn-light btn-sm text-capitalize font-11">send message</button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              <img src="assets/images/feedback_client/client-08.jpg" alt="" class="square-sm rounded">
+                                          </td>
+                                          <td class="align-middle">
+                                              <h6 class="font-15 mb-1">Chrisopher</h6>
+                                              <p class="font-12 text-capitalize mb-0">App Designer</p>
+                                          </td>
+                                          <td class="align-middle">
+                                              <button class="btn btn-light btn-sm text-capitalize font-11">send message</button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              <img src="assets/images/feedback_client/client-07.jpg" alt="" class="square-sm rounded">
+                                          </td>
+                                          <td class="align-middle">
+                                              <h6 class="font-15 mb-1">Michel</h6>
+                                              <p class="font-12 text-capitalize mb-0">Dashboard Designer</p>
+                                          </td>
+                                          <td class="align-middle">
+                                              <button class="btn btn-light btn-sm text-capitalize font-11">send message</button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              <img src="assets/images/feedback_client/client-03.jpg" alt="" class="square-sm rounded">
+                                          </td>
+                                          <td class="align-middle">
+                                              <h6 class="font-15 mb-1">Krista</h6>
+                                              <p class="font-12 text-capitalize mb-0">App Designer</p>
+                                          </td>
+                                          <td class="align-middle">
+                                              <button class="btn btn-light btn-sm text-capitalize font-11">send message</button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              <img src="assets/images/feedback_client/client-04.jpg" alt="" class="square-sm rounded">
+                                          </td>
+                                          <td class="align-middle">
+                                              <h6 class="font-15 mb-1">Thomas</h6>
+                                              <p class="font-12 text-capitalize mb-0">Website Designer</p>
+                                          </td>
+                                          <td class="align-middle">
+                                              <button class="btn btn-light btn-sm text-capitalize font-11">send message</button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              <img src="assets/images/feedback_client/client-05.jpg" alt="" class="square-sm rounded">
+                                          </td>
+                                          <td class="align-middle">
+                                              <h6 class="font-15 mb-1">Jensi</h6>
+                                              <p class="font-12 text-capitalize mb-0">Front Designer</p>
+                                          </td>
+                                          <td class="align-middle">
+                                              <button class="btn btn-light btn-sm text-capitalize font-11">send message</button>
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+<app-footer></app-footer>
+</div>
